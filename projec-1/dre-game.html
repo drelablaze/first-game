@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="dre-style.css" />
+    <title>Guess My Number!</title>
+  </head>
+  <body>
+    <header>
+      <h1>Guess The Number!</h1>
+      <div class="between">
+        <p class="bet-1-20">&lt; Number is between 1 and 20 &gt;</p>
+        <p class="game-times">
+          Times Game Played: <span class="game-times-display">0</span>
+        </p>
+      </div>
+      <button class="btn again">Play Again!</button>
+      <div class="number">?</div>
+    </header>
+    <main class="main-container">
+      <section class="left">
+        <input type="number" class="guess" />
+        <button class="btn check">Check!</button>
+      </section>
+      <section class="right">
+        <p class="message">Start guessing...</p>
+        <div class="append"></div>
+        <p class="label-score">💯 Score: <span class="score">5</span></p>
+        <p class="label-highscore">
+          🥇 Highscore: <span class="highscore">0</span>
+        </p>
+      </section>
+    </main>
+    <script src="dre-game.js"></script>
+  </body>
+</html>

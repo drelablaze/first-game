@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --nav-backgroundColor:#f1b073;
+  --nav-listColor: #000000;
+  --nav-bar-width:1200px;
+  --list-font-weight:400;
+  --list-font-size:0.9rem;
+  --btn-BGcolor:#E98815;
+}
+
+body{
+  background-color: #ffffff;
+  font-family: 'poppins', sans-serif;
+}
+
+.nav-bar-container{
+  padding: 0.5rem 0.5rem;
+  background: var(--nav-backgroundColor);
+}
+
+.dre-logo{
+  width: 100px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dre-logo img{
+  width: 100%;
+}
+
+.nav-bar{
+  display: inline-block;
+  text-align: right;
+  vertical-align: middle;
+  width: calc(100% - 120px);
+}
+
+.nav-bar-lists{
+  display: inline-block;
+}
+
+ul .list{
+  list-style-type: none;
+  font-weight:var(--list-font-weight);
+  font-size: var(--list-font-size);
+  display: inline-block;
+  margin-left: 3.5rem;
+  font-weight: bolder;
+}
+
+.list a{
+  text-decoration: none;
+  color: var(--nav-listColor);
+}
+
+.list a:hover{
+  color: #ffffff;
+  border-bottom: #ffffff solid 0.15rem;
+}
+
+.btn-register{
+  padding: 0.5rem;
+  background-color:var(--btn-BGcolor) ;
+  border-radius: 9999px;
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'poppins', sans-serif;
+  font-weight: bolder;
+  font-size: 0.7rem;
+  margin-left: 2.5rem;
+  letter-spacing: 0.2px;
+  vertical-align: middle;
+}
+
+.btn-register a{
+  text-decoration: none;
+  color:#ffffff;
+  border-bottom: #ffffff solid 0.15rem;
+}
+
+.btn-register:hover{
+  background: #b86704;
+}
+
+/* .toggle-button{
+  width: 2rem;
+  background:transparent;
+  border: #E98815 solid 0.5rem;
+  border: 10px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.toggle-button-bar{
+  width: 100%;
+  background: #E98815;
+  height: 0.3rem;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.toggle-button:focus{
+  outline: none;
+} */
+
+#product-overview{
+  width: 100%;
+  height: 700px;
+  padding: 2rem;
+  background:linear-gradient(to top, rgb(0, 0, 0), transparent), url(../images/gym.png) left bottom/auto 90% no-repeat, url(../images/gym-3.png) center top / auto 85% no-repeat, url(../images/gym-2.png) right bottom/auto 91% no-repeat;
+  /* background-repeat: no-repeat;
+  background-size: auto 90%;
+  background-position: left bottom; */
+  margin-top: 2rem;
+  position: relative;
+}
+
+#product-overview h1{
+  position: absolute;
+  bottom: 9%;
+  left: 35%;
+  color: #d59c57;
+  font-size: 1.3rem;
+  background: #ffffff;
+  padding: 0.2rem;
+  border-radius: 9999px;
+  text-align: center;
+  width: 30%;
+  font-weight:lighter;
+}
+
+.plans-title{
+  color: #f1b073;
+  text-align: center;
+}
+
+.plan{
+  background: #d59c57;
+  text-align: center;
+  width: 30%;
+  display: inline-block;
+  padding: 16px;
+  margin: 8px;
+  vertical-align: middle;
+  color: #ffffff;
+  border-radius:16px;
+}
+
+.plan-in-middle{
+  background:#E98815;
+  color: #000000;
+  box-shadow: 2px 2px 2px 2px rgba(147, 144, 144, 0.5);
+}
+
+.plan-badge{
+  background: #ffffff;
+  padding: 8px;
+  box-shadow: 2px 2px 2px 2px rgba(147, 144, 144, 0.5);
+  border-radius:16px;
+}
+
+.plans-container{
+  margin: auto;
+  width: 90%;
+  text-align: center;
+}

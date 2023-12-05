@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Roboto:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 40vh;
+  align-items: center;
+  position: relative;
+  background: #aaaa03;
+}
+
+.again {
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  vertical-align: middle;
+  color: rgb(170, 170, 3);
+}
+
+.between {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin-right: 10px;
+  vertical-align: middle;
+  color: white;
+  font-weight: bolder;
+  font-family: "dosis", sans-serif;
+  font-size: 1.5rem;
+}
+
+.game-times {
+  position: absolute;
+  left: 50px;
+}
+
+h1 {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 40px;
+  color: rgb(255, 255, 255);
+  font-size: 5rem;
+  font-family: "dosis", sans-serif;
+  letter-spacing: 5px;
+  border-radius: 20px;
+  vertical-align: middle;
+  animation: scroll 3s 1s linear infinite alternate;
+}
+
+.number {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  text-align: center;
+  width: 10%;
+  background: white;
+  margin: 0 auto 20px;
+  padding: 10px;
+  color: rgb(170, 170, 3);
+  font-weight: bolder;
+  font-size: 4rem;
+  border-radius: 10px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 58vh;
+}
+
+.left {
+  width: 45%;
+  text-align: center;
+}
+
+.right {
+  width: 45%;
+  text-align: center;
+}
+
+.guess {
+  background: none;
+  border: 4px solid rgb(170, 170, 3);
+  color: rgb(170, 170, 3);
+  font-size: 5rem;
+  padding: 2.5rem;
+  width: 25rem;
+  text-align: center;
+  display: block;
+  margin-bottom: 3rem;
+  outline: none;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 20px;
+  font-size: 1rem;
+  font-family: "dosis", sans-serif;
+  width: 150px;
+  border-radius: 10px;
+  border: none;
+}
+
+button.check {
+  background: rgb(170, 170, 3);
+  color: white;
+  font-weight: bolder;
+  margin-top: 70px;
+}
+
+.right p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  color: rgb(170, 170, 3);
+  font-family: "dosis", sans-serif;
+}
+
+.right .message {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
